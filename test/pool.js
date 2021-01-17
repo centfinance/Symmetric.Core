@@ -83,7 +83,7 @@ contract('BPool', async (accounts) => {
         it('Fails binding tokens that are not approved', async () => {
             await truffleAssert.reverts(
                 pool.bind(MKR, toWei('10'), toWei('2.5')),
-                'ERR_BTOKEN_BAD_CALLER',
+                'ERR_CTOKEN_BAD_CALLER',
             );
         });
 
@@ -557,13 +557,13 @@ contract('BPool', async (accounts) => {
         });
     });
 
-    describe('BToken interactions', () => {
+    describe('CToken interactions', () => {
         it('Token descriptors', async () => {
             const name = await pool.name();
-            assert.equal(name, 'Balancer Pool Token');
+            assert.equal(name, 'Cent Pool Token');
 
             const symbol = await pool.symbol();
-            assert.equal(symbol, 'BPT');
+            assert.equal(symbol, 'CPT');
 
             const decimals = await pool.decimals();
             assert.equal(decimals, 18);
@@ -590,7 +590,7 @@ contract('BPool', async (accounts) => {
         it('Token transfers', async () => {
             await truffleAssert.reverts(
                 pool.transferFrom(user2, admin, toWei('10')),
-                'ERR_BTOKEN_BAD_CALLER',
+                'ERR_CTOKEN_BAD_CALLER',
             );
 
             await pool.transferFrom(admin, user2, toWei('1'));

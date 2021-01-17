@@ -15,7 +15,7 @@ contract CryticInterface{
     uint initialAllowance_attacker_attacker;
 }
 
-contract TBTokenERC20 is CryticInterface, BToken {
+contract TCTokenERC20 is CryticInterface, CToken {
 
     constructor() public {
         _totalSupply = initialTotalSupply;

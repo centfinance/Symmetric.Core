@@ -13,10 +13,10 @@
 
 pragma solidity 0.5.12;
 
-import "./BToken.sol";
+import "./CToken.sol";
 import "./BMath.sol";
 
-contract BPool is BBronze, BToken, BMath {
+contract BPool is BBronze, CToken, BMath {
 
     struct Record {
         bool bound;   // is token bound to pool

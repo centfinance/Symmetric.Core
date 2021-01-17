@@ -1,5 +1,5 @@
 const TMath = artifacts.require('TMath');
-const BToken = artifacts.require('BToken');
+const CToken = artifacts.require('CToken');
 const BFactory = artifacts.require('BFactory');
 
 module.exports = async function (deployer, network, accounts) {

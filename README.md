@@ -1,32 +1,19 @@
-<p align=center>
-<img width="128px" src="https://balancer-labs.github.io/pebbles/images/pebbles-pad.256w.png" alt="balancer pebbles logo"/>
-</p>
+<div align="center">
+  <img alt="ReDoc logo" src="https://raw.githubusercontent.com/centfinance/Community/main/media-pack/logo.png" width="400px" />
 
-<p align="center">
-  <a href="https://circleci.com/gh/balancer-labs/balancer-core">
-    <img src="https://circleci.com/gh/balancer-labs/balancer-core.svg?style=svg&circle-token=2f432d0cf2690bec7f215a7738bd1142b97bd9b4" />
-  </a>
-  <a href="https://coveralls.io/github/balancer-labs/balancer-core">
-    <img src="https://coveralls.io/repos/github/balancer-labs/balancer-core/badge.svg?t=7avwwt" />
-  </a>
-  <a href="https://www.gnu.org/licenses/gpl-3.0">
-    <img src="https://img.shields.io/badge/License-GPLv3-green.svg" />
-  </a>
-</p>
+</div>
 
-<h1 align=center><code>balancer</code></h1>
+<h1 align=center><code>Cent Exchange Smart Contracts</code></h1>
 
-**Balancer** is an automated **portfolio manager**, **liquidity provider**, and **price sensor**.
-
-Balancer turns the concept of an index fund on its head: instead of a paying fees
+Cent turns the concept of an index fund on its head: instead of a paying fees
 to portfolio managers to rebalance your portfolio, you collect fees from traders, who rebalance
 your portfolio by following arbitrage opportunities.
 
-Balancer is based on an N-dimensional invariant surface which is a generalization of the constant product formula described by Vitalik Buterin and proven viable by the popular Uniswap dapp.
+Cent is based on an N-dimensional invariant surface which is a generalization of the constant product formula described by Vitalik Buterin and proven viable by the popular Uniswap dapp.
 
 ## 🍂 Bronze Release 🍂
 
-The *🍂Bronze Release🍂*  is the first of 3 planned releases of the Balancer Protocol. Bronze emphasizes code clarity for audit and verification, and does not go to great lengths to optimize for gas.
+The *🍂Bronze Release🍂*  is the first of 3 planned releases of the Cent Protocol. Bronze emphasizes code clarity for audit and verification, and does not go to great lengths to optimize for gas.
 
 The *❄️Silver Release❄️* will bring many gas optimizations and architecture changes that will reduce transaction overhead and enable more flexibility for managed pools.
 
@@ -34,7 +21,7 @@ The *☀️Golden Release☀️* will introduce a curious new liquidity mechanis
 
 ## Documentation
 
-The full documentation can be found at [https://docs.balancer.finance](https://docs.balancer.finance)
+Coming soon
 
 
 ## Development
