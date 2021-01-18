@@ -19,7 +19,7 @@
 
 // based on WETH9 mainnet: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
 
-pragma solidity 0.5.12;
+pragma solidity >=0.5.0;
 
 contract WPOA {
     string public name     = "Wrapped POA";

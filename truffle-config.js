@@ -2,7 +2,8 @@ require('dotenv').config();
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const web3 = new Web3();
-const mnemonic = process.env.MNEMONIC;
+const mnemonicPhrase = process.env.MNEMONIC;
+const infuraKey = 'fj4jll3k.....';
 
 module.exports = {
     networks: {
@@ -25,7 +26,7 @@ module.exports = {
                 mnemonic: {
                   phrase: mnemonicPhrase
                 },
-                providerOrUrl: "https://mainnet.infura.io/v3/{key}",
+                providerOrUrl: `https://mainnet.infura.io/v3/${infuraKey}`,
       //          numberOfAddresses: 1,
       //          shareNonce: true,
       //          derivationPath: "m/44'/1'/0'/0/"
@@ -41,7 +42,7 @@ module.exports = {
                 mnemonic: {
                   phrase: mnemonicPhrase
                 },
-                providerOrUrl: "https://kovan.infura.io/v3/{key}",
+                providerOrUrl: `https://kovan.infura.io/v3/${infuraKey}`,
               }),
               gas: 10000000,
               gasPrice: web3.utils.toWei('46', 'gwei'),
@@ -75,7 +76,7 @@ module.exports = {
     // Configure your compilers
     compilers: {
         solc: {
-            version: '^0.5.12',
+            version: '^0.5.0',
             settings: { // See the solidity docs for advice about optimization and evmVersion
                 optimizer: {
                     enabled: true,

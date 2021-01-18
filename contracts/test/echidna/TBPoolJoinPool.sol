@@ -1,6 +1,6 @@
 import "../../BNum.sol";
 
-pragma solidity 0.5.12;
+pragma solidity >=0.5.16;
 
 contract TBPoolJoinPool is BNum {
 
