@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "centdex-core",
+    "name": "symmetric_core",
     "version": "0.0.1",
     "license": "GPL-3.0-only",
     "description": "Cent Dex Core Contracts and ABI",
@@ -15,12 +15,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/centfinance/Cent.Dex_Core.git"
+        "url": "git+https://github.com/centfinance/Symmetric.Core.git"
     },
     "bugs": {
-        "url": "https://github.com/centfinance/Cent.Dex_Core/issues"
+        "url": "https://github.com/centfinance/Symmetric.Core/issues"
     },
-    "homepage": "https://github.com/centfinance/Cent.Dex_Core#readme",
+    "homepage": "https://github.com/centfinance/Symmetric.Core#readme",
     "devDependencies": {
         "@openzeppelin/contracts": "2.5.1",
         "chai": "^4.2.0",
@@ -40,10 +40,11 @@
         "web3": "^1.3.1"
     },
     "dependencies": {
+        "@celo/contractkit": "^1.2.0",
+        "@truffle/hdwallet-provider": "^1.2.1",
         "decimal.js": "^10.2.1",
         "dotenv": "^8.2.0",
         "ganache-cli": "^6.12.2",
-        "global": "^4.4.0",
-        "@truffle/hdwallet-provider": "^1.2.1"
+        "global": "^4.4.0"
     }
 }
