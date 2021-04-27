@@ -98,7 +98,7 @@ alfajores: {
 },
 celo: {
   provider: kit.connection.web3.currentProvider, // CeloProvider
-  network_id: 44787                              // Alfajores Celo test netowrk network id
+  network_id: 42220                              // Alfajores Celo test netowrk network id
 }
 },
     // Configure your compilers
