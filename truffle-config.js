@@ -69,16 +69,19 @@ module.exports = {
         network_id: 77,
   },
   xdai: {
-      provider: () =>
-      new HDWalletProvider({
-        mnemonic: {
-          phrase: mnemonicPhrase
-        },
-        providerOrUrl: web3,
-      }),
-    gas: 12087782,
-    gasPrice: 1000000000,
-    network_id: 100,
+    provider: () =>
+    new HDWalletProvider({
+      mnemonic: {
+        phrase: mnemonicPhrase
+      },
+      providerOrUrl: "https://dai.poa.network",
+    }),
+    gas: 5000000,
+    gasPrice: 10000000000,
+  network_id: 100,
+  networkCheckTimeout: 1000000000,
+  confirmations: 5,
+  timeoutBlocks: 900
 },
 catalyst: {
     provider: () =>
