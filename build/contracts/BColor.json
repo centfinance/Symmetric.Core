@@ -1,0 +1,599 @@
+{
+  "contractName": "BColor",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getColor",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getColor\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/media/eagle/Data/Source/Symmetric/BACKUP/Symmetric.Core/contracts/BColor.sol\":\"BColor\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":100},\"remappings\":[]},\"sources\":{\"/media/eagle/Data/Source/Symmetric/BACKUP/Symmetric.Core/contracts/BColor.sol\":{\"keccak256\":\"0x2872463b3db57b521b62599bbd0e0210afd1f024f5d65b52b0498e5e009708ce\",\"urls\":[\"bzz-raw://a5db6de27967b19c79b610977601086d22c6c52d273741ac0365b96802446027\",\"dweb:/ipfs/QmTShSQYcsjWFSKfD1iEWksB59mhDVSqP1dKT3JgnHz9BA\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// This program is free software: you can redistribute it and/or modify\n// it under the terms of the GNU General Public License as published by\n// the Free Software Foundation, either version 3 of the License, or\n// (at your option) any later version.\n\n// This program is distributed in the hope that it will be useful,\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n// GNU General Public License for more details.\n\n// You should have received a copy of the GNU General Public License\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.\n\npragma solidity >=0.5.16;\n\ncontract BColor {\n    function getColor()\n        external view\n        returns (bytes32);\n}\n\ncontract BBronze is BColor {\n    function getColor()\n        external view\n        returns (bytes32) {\n            return bytes32(\"BRONZE\");\n        }\n}\n",
+  "sourcePath": "/media/eagle/Data/Source/Symmetric/BACKUP/Symmetric.Core/contracts/BColor.sol",
+  "ast": {
+    "absolutePath": "/media/eagle/Data/Source/Symmetric/BACKUP/Symmetric.Core/contracts/BColor.sol",
+    "exportedSymbols": {
+      "BBronze": [
+        20
+      ],
+      "BColor": [
+        7
+      ]
+    },
+    "id": 21,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "643:25:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 7,
+        "linearizedBaseContracts": [
+          7
+        ],
+        "name": "BColor",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 6,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getColor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "709:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6,
+                  "src": "751:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 3,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "751:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "750:9:0"
+            },
+            "scope": 7,
+            "src": "692:68:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 21,
+        "src": "670:92:0"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 8,
+              "name": "BColor",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 7,
+              "src": "784:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_BColor_$7",
+                "typeString": "contract BColor"
+              }
+            },
+            "id": 9,
+            "nodeType": "InheritanceSpecifier",
+            "src": "784:6:0"
+          }
+        ],
+        "contractDependencies": [
+          7
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 20,
+        "linearizedBaseContracts": [
+          20,
+          7
+        ],
+        "name": "BBronze",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 18,
+              "nodeType": "Block",
+              "src": "865:49:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "42524f4e5a45",
+                        "id": 15,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "894:8:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_4163e3f7a99fc80b57ec838b307c7a27558a888bb048d8e4d5cc03e3134dee47",
+                          "typeString": "literal_string \"BRONZE\""
+                        },
+                        "value": "BRONZE"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_4163e3f7a99fc80b57ec838b307c7a27558a888bb048d8e4d5cc03e3134dee47",
+                          "typeString": "literal_string \"BRONZE\""
+                        }
+                      ],
+                      "id": 14,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "886:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_bytes32_$",
+                        "typeString": "type(bytes32)"
+                      },
+                      "typeName": "bytes32"
+                    },
+                    "id": 16,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "886:17:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 13,
+                  "id": 17,
+                  "nodeType": "Return",
+                  "src": "879:24:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 19,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getColor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "814:2:0"
+            },
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19,
+                  "src": "856:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "856:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "855:9:0"
+            },
+            "scope": 20,
+            "src": "797:117:0",
+            "stateMutability": "view",
+            "superFunction": 6,
+            "visibility": "external"
+          }
+        ],
+        "scope": 21,
+        "src": "764:152:0"
+      }
+    ],
+    "src": "643:274:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/media/eagle/Data/Source/Symmetric/BACKUP/Symmetric.Core/contracts/BColor.sol",
+      "exportedSymbols": {
+        "BBronze": [
+          20
+        ],
+        "BColor": [
+          7
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "643:25:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            7
+          ],
+          "name": "BColor",
+          "scope": 21
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getColor",
+              "scope": 7,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2,
+                "name": "ParameterList",
+                "src": "709:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 6,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 3,
+                        "name": "ElementaryTypeName",
+                        "src": "751:7:0"
+                      }
+                    ],
+                    "id": 4,
+                    "name": "VariableDeclaration",
+                    "src": "751:7:0"
+                  }
+                ],
+                "id": 5,
+                "name": "ParameterList",
+                "src": "750:9:0"
+              }
+            ],
+            "id": 6,
+            "name": "FunctionDefinition",
+            "src": "692:68:0"
+          }
+        ],
+        "id": 7,
+        "name": "ContractDefinition",
+        "src": "670:92:0"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            7
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            20,
+            7
+          ],
+          "name": "BBronze",
+          "scope": 21
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "BColor",
+                  "referencedDeclaration": 7,
+                  "type": "contract BColor"
+                },
+                "id": 8,
+                "name": "UserDefinedTypeName",
+                "src": "784:6:0"
+              }
+            ],
+            "id": 9,
+            "name": "InheritanceSpecifier",
+            "src": "784:6:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getColor",
+              "scope": 20,
+              "stateMutability": "view",
+              "superFunction": 6,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10,
+                "name": "ParameterList",
+                "src": "814:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 19,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 11,
+                        "name": "ElementaryTypeName",
+                        "src": "856:7:0"
+                      }
+                    ],
+                    "id": 12,
+                    "name": "VariableDeclaration",
+                    "src": "856:7:0"
+                  }
+                ],
+                "id": 13,
+                "name": "ParameterList",
+                "src": "855:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 13
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "bytes32",
+                          "type_conversion": true
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_stringliteral_4163e3f7a99fc80b57ec838b307c7a27558a888bb048d8e4d5cc03e3134dee47",
+                                  "typeString": "literal_string \"BRONZE\""
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "type": "type(bytes32)",
+                              "value": "bytes32"
+                            },
+                            "id": 14,
+                            "name": "ElementaryTypeNameExpression",
+                            "src": "886:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "42524f4e5a45",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"BRONZE\"",
+                              "value": "BRONZE"
+                            },
+                            "id": 15,
+                            "name": "Literal",
+                            "src": "894:8:0"
+                          }
+                        ],
+                        "id": 16,
+                        "name": "FunctionCall",
+                        "src": "886:17:0"
+                      }
+                    ],
+                    "id": 17,
+                    "name": "Return",
+                    "src": "879:24:0"
+                  }
+                ],
+                "id": 18,
+                "name": "Block",
+                "src": "865:49:0"
+              }
+            ],
+            "id": 19,
+            "name": "FunctionDefinition",
+            "src": "797:117:0"
+          }
+        ],
+        "id": 20,
+        "name": "ContractDefinition",
+        "src": "764:152:0"
+      }
+    ],
+    "id": 21,
+    "name": "SourceUnit",
+    "src": "643:274:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-05-15T20:34:24.776Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
