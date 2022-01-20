@@ -61,7 +61,7 @@ contract DSProxy is DSAuth, DSNote {
 
         // call contract in current context
         assembly {
-            let succeeded := delegatecall(sub(gas, 5000), _target, add(_data, 0x20), mload(_data), 0, 0)
+            let succeeded := delegatecall(sub(gas, 50000), _target, add(_data, 0x20), mload(_data), 0, 0)
             let size := returndatasize
 
             response := mload(0x40)
